@@ -1,0 +1,267 @@
+/* =========================================
+   ESTILOS GENERALES DEL SITIO WEB
+   Se aplica un estilo base a toda la página
+========================================= */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d9e0e8;
+}
+
+/* =========================================
+   SELECTOR DE CLASE: contenedor principal
+   Define el ancho y centrado del contenido
+========================================= */
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* =========================================
+   SELECTOR DE ETIQUETA: header
+   Aplica diseño al encabezado principal
+========================================= */
+header {
+    background: linear-gradient(to bottom, #3f6ea8, #2f5f9f);
+    color: white;
+    padding: 25px;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+
+/* =========================================
+   SELECTOR DE CLASE: etiqueta visual
+   Muestra el nombre de la sección header
+========================================= */
+.header-label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+/* =========================================
+   SELECTOR DESCENDENTE
+   Aplica estilo al h1 dentro del header
+========================================= */
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+/* =========================================
+   SELECTOR DESCENDENTE
+   Aplica estilo al h2 dentro del header
+========================================= */
+header h2 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+/* =========================================
+   SELECTOR DE CLASE
+   Barra decorativa debajo del encabezado
+========================================= */
+.header-bar {
+    height: 12px;
+    background-color: #244d84;
+}
+
+/* =========================================
+   SELECTOR DE ETIQUETA
+   Estilos del menú de navegación
+========================================= */
+nav {
+    background-color: #e6e9ef;
+    padding: 15px;
+    text-align: center;
+}
+
+/* =========================================
+   SELECTOR DESCENDENTE
+   Estilos para los enlaces dentro del nav
+========================================= */
+nav a {
+    text-decoration: none;
+    background-color: #d0d6df;
+    color: #2c3e50;
+    padding: 8px 18px;
+    margin: 0 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* =========================================
+   SELECTOR DE CLASE COMBINADA
+   Marca visualmente la página activa
+========================================= */
+nav a.active {
+    background-color: #3f6ea8;
+    color: white;
+}
+
+/* =========================================
+   PSEUDOCLASE :hover
+   Cambia el estilo al pasar el cursor
+========================================= */
+nav a:hover {
+    background-color: #c2c8d2;
+}
+
+/* =========================================
+   SELECTOR DE CLASE
+   Título principal de cada página interna
+========================================= */
+.page-title {
+    margin: 20px 0;
+    color: #2c3e50;
+}
+
+/* =========================================
+   SELECTOR DE CLASE
+   Tarjetas de contenido del sitio
+========================================= */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================================
+   SELECTOR DE CLASE
+   Área de texto dentro de las tarjetas
+========================================= */
+.card-text {
+    width: 70%;
+}
+
+/* =========================================
+   SELECTOR DE CLASE
+   Permite usar todo el ancho disponible
+========================================= */
+.full-width {
+    width: 100%;
+}
+
+/* =========================================
+   SELECTOR DESCENDENTE
+   Aplica tamaño a las imágenes de las cards
+========================================= */
+.card img {
+    width: 90px;
+}
+
+/* =========================================
+   SELECTOR DE CLASE
+   Distribución de tarjetas en experiencias
+========================================= */
+.grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* =========================================
+   SELECTOR DESCENDENTE
+   Estilo de las tarjetas dentro de grid
+========================================= */
+.grid .card {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* =========================================
+   SELECTOR DE CLASE
+   Tarjeta especial para el formulario
+========================================= */
+.form-card {
+    display: block;
+}
+
+/* =========================================
+   SELECTOR DE CLASE
+   Margen superior del formulario
+========================================= */
+.contact-form {
+    margin-top: 20px;
+}
+
+/* =========================================
+   SELECTOR DESCENDENTE
+   Estilos para las etiquetas del formulario
+========================================= */
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* =========================================
+   SELECTOR AGRUPADO
+   Estilos compartidos para campos del formulario
+========================================= */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b9c3cf;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* =========================================
+   SELECTOR DESCENDENTE
+   Permite redimensionar verticalmente textarea
+========================================= */
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* =========================================
+   SELECTOR DESCENDENTE
+   Estilos del botón del formulario
+========================================= */
+.contact-form button {
+    margin-top: 20px;
+    background-color: #3f6ea8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================================
+   PSEUDOCLASE :hover
+   Cambia el color del botón al pasar el cursor
+========================================= */
+.contact-form button:hover {
+    background-color: #2f5f9f;
+}
+
+/* =========================================
+   SELECTOR DE ETIQUETA
+   Diseño del pie de página
+========================================= */
+footer {
+    background-color: #3b4a5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 20px;
+}

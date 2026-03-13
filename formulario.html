@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Encabezado principal del blog -->
+    <header>
+        <div class="header-label">&lt;header&gt;</div>
+        <h1>Blog Personal Académico</h1>
+        <h2>Ingeniería en Sistemas Computacionales</h2>
+    </header>
+
+    <div class="header-bar"></div>
+
+    <!-- Menú de navegación del sitio -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="experiencias.html">Experiencias en Programación</a>
+        <a href="formulario.html" class="active">Formulario</a>
+    </nav>
+
+    <h2 class="page-title">Formulario de Contacto Académico</h2>
+
+    <div class="card form-card">
+        <div class="card-text full-width">
+            <p>
+                En esta sección se muestra un formulario web implementado dentro de mi proyecto personal.
+                Su función es recopilar información básica de contacto y comentarios del usuario.
+            </p>
+
+            <!-- Inicio del formulario HTML -->
+            <form action="#" method="post" class="contact-form">
+
+                <!-- Campo de texto para escribir el nombre -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+
+                <!-- Campo de tipo email para escribir el correo -->
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+                <!-- Campo de tipo tel para el número telefónico -->
+                <label for="telefono">Número telefónico:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número telefónico" required>
+
+                <!-- Campo de tipo date para seleccionar una fecha -->
+                <label for="fecha">Fecha de contacto:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <!-- Lista desplegable creada con select -->
+                <label for="motivo">Motivo del mensaje:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="comentario">Comentario</option>
+                    <option value="duda">Duda académica</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="contacto">Contacto personal</option>
+                </select>
+
+                <!-- Área de texto para escribir un mensaje más amplio -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+                <!-- Botón para enviar la información del formulario -->
+                <button type="submit">Enviar formulario</button>
+
+            </form>
+            <!-- Fin del formulario HTML -->
+
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        © 2026 – Blog Personal ISC – ITSX
+    </footer>
+
+</div>
+
+</body>
+</html>
