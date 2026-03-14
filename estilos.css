@@ -9,6 +9,15 @@ body {
 }
 
 /* =========================================
+   MODELO DE CAJA GLOBAL
+   Se utiliza box-sizing para controlar mejor
+   el tamaño total de los elementos
+========================================= */
+* {
+    box-sizing: border-box;
+}
+
+/* =========================================
    SELECTOR DE CLASE: contenedor principal
    Define el ancho y centrado del contenido
 ========================================= */
@@ -82,6 +91,7 @@ nav {
 /* =========================================
    SELECTOR DESCENDENTE
    Estilos para los enlaces dentro del nav
+   Aquí también se aplica padding y margin
 ========================================= */
 nav a {
     text-decoration: none;
@@ -92,6 +102,7 @@ nav a {
     border-radius: 6px;
     font-weight: bold;
     display: inline-block;
+    border: 1px solid #b9c3cf;
 }
 
 /* =========================================
@@ -123,12 +134,17 @@ nav a:hover {
 /* =========================================
    SELECTOR DE CLASE
    Tarjetas de contenido del sitio
+   Aquí se aplica claramente el modelo de caja:
+   - padding: espacio interno
+   - margin: espacio externo
+   - border: borde del contenedor
 ========================================= */
 .card {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     margin: 15px 0;
+    border: 2px solid #c7d0db;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -157,6 +173,8 @@ nav a:hover {
 ========================================= */
 .card img {
     width: 90px;
+    height: 90px;
+    object-fit: contain;
 }
 
 /* =========================================
@@ -209,6 +227,8 @@ nav a:hover {
 /* =========================================
    SELECTOR AGRUPADO
    Estilos compartidos para campos del formulario
+   Aquí se utilizan width, padding, border
+   y box-sizing para controlar el tamaño
 ========================================= */
 .contact-form input,
 .contact-form select,
@@ -237,7 +257,7 @@ nav a:hover {
     margin-top: 20px;
     background-color: #3f6ea8;
     color: white;
-    border: none;
+    border: 2px solid #2f5f9f;
     padding: 12px 20px;
     border-radius: 6px;
     font-size: 15px;
@@ -251,6 +271,36 @@ nav a:hover {
 ========================================= */
 .contact-form button:hover {
     background-color: #2f5f9f;
+}
+
+/* =========================================
+   DEMOSTRACIÓN DEL MODELO DE CAJA
+   Esta tarjeta fue agregada para cumplir la
+   actividad 10 y mostrar margin, padding,
+   border, width, height y box-sizing
+========================================= */
+.box-model-demo {
+    width: 100%;
+    padding: 25px;
+    margin: 20px 0;
+    border: 3px solid #3f6ea8;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   CONTENEDOR INTERNO DE EJEMPLO
+   Se controla tamaño y espacio visual
+========================================= */
+.box-example {
+    width: 100%;
+    max-width: 500px;
+    height: 180px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 4px dashed #244d84;
+    background-color: #eef3f9;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 /* =========================================
